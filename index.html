@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Color Harmony Generator</title>
+<meta charset="ISO-8859-1" />
+<meta name="description" content="Color Harmony Generator" />
+<meta name="keywords" content="color harmony generator,monochromatic,analogous,complementary,triads,jquery,php classes" />
+<meta name="author" content="Usman Didi Khamdani" />
+<meta name="email" content="usmankhamdani@gmail.com" />
+<meta name="phone" content="+6287883919293" type="mobile" />
+<link rel="shortcut icon" href="images/ico.ico" />
+<link type="text/css" href="css/main.css" rel="stylesheet" />	
+<script type="text/javascript" src="jquery/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="jquery/jquery-ui-1.8.2.custom.min.js"></script>
+<script type="text/javascript" src="jquery/jquery-color-picker.js"></script>
+</head>
+<body>
+
+<img style="float:right;margin-top:-10px;margin-right:-10px;margin-left:10px;margin-bottom:10px;border-left:1px solid #111;border-bottom:1px solid #111;" src="images/color-harmony-bg.png" />
+
+<h1><a href="http://color-harmony.edelweis-art.com">Color Harmony Generator</a></h1>
+
+<table cellspacing="0" cellpadding="0" id="main">
+<tr>
+	<th colspan="2" style="padding:10px;padding-bottom:0">Base Color</th>
+</tr>
+<tr>
+	<td width="120">
+		<div id="baseColor" style="background-color:#808080"></div>
+	</td>
+	<td>
+		<div id="baseColorNameHover">
+			<span id="hexVH">#808080</span><br />
+			Red: <span id="redVH">128</span><br />
+			Green: <span id="greenVH">128</span><br />
+			Blue: <span id="blueVH">128</span>
+		</div>
+		<div id="baseColorName">
+			<span id="hexV">#808080</span><br />
+			Red: <span id="redV">128</span><br />
+			Green: <span id="greenV">128</span><br />
+			Blue: <span id="blueV">128</span>
+		</div>
+	</td>
+</tr>
+<tr>
+	<td align="center" colspan="2">
+		<div id="cpalette"></div>
+		<div id="slide-panel">
+			<div class="slider" id="sliderR"></div>
+			<div class="slider" id="sliderG"></div>
+			<div class="slider" id="sliderB"></div>
+		</div>
+		<div><button id="cpanel-button">View Color Palette</button></div>
+	</td>
+</tr>
+<tr>
+	<td align="center" colspan="2" style="padding:10px;padding-top:0">		
+		<form id="color-generator">
+		<input type="hidden" name="color" /><br />
+		<input title="click to generate this color" type="submit" value="Generate" /> <select name="type"><option value="1">Monochromatic</option><option value="2">Analogous</option><option value="3">Complementary</option><option value="4">Triads</option><option value="0">All</option></select>
+		</form>
+	</td>
+</tr>
+</table>
+
+<p><span class="desc">[About]</span> Color Harmony Generator is a web-based application that useful to generate harmonic colors in Monochromatic, Analogous, Complementary and or Triads, from a base color. Color Harmony Generator, basically, uses a PHP class, <a href="http://www.phpclasses.org/package/6106-PHP-Convert-and-generate-harmonic-colors.html" target="_blank">Color Harmony Class</a>, and uses the tool palette of colors and jQuery UI Slider as an interface to get the base color.</p>
+
+<p><span class="desc">[How to Use]</span>  There are two ways to get the base color, use RGB slide button and use the color palette. By using the slide button, slide the slide button of Red, Green or Blue for getting elements of RGB color for creating the desired color. By using the color palette, select and click on the desired color. The selected color will be displayed in base color box.</p>
+
+<p>To generate color harmony, choose the kind of color harmony, whether Monochromatic, Analogous, Complementary, Triads or all of them and then click the Generate button.</p>
+
+<p><b>TIPS:</b> To obtain an appropriate base color, you can first choose a color using the color palette, and then you can refine the elements of Red, Green and Blue by using the slider.</p>
+
+<div style="clear:both"></div>
+
+<div id="color-harmony"></div>
+
+<div id="footer">Copyright &copy; 2010 <a href="mailto:usmankhamdani@gmail.com">Usman Didi Khamdani</a> | <a href="https://usmandidikhamdani.blogspot.co.id">usmandidikhamdani.blogspot.co.id</a></div>
+
+</body>
+</html>

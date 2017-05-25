@@ -1,0 +1,8 @@
+if you work with css rule, i.e for web designing, please use color_converter_css_only.class.php and color_harmony_css_only.class.php for fix output of HEX color.
+
+For this, please rename (in class path):
+color_converter.class.php => color_converter_other_css_rule.class.php
+color_converter_css_only.class.php => color_converter.class.php
+color_harmony.class.php => color_harmony_other_css_rule.class.php
+color_harmony_css_only.class.php => color_harmony.class.php
+

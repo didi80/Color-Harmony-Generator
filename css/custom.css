@@ -1,0 +1,172 @@
+/* base color = #a36209 */
+
+body { 
+	font: 80% "Trebuchet MS", sans-serif; 
+	margin: 0;
+	padding:10px;
+	text-align: justify;
+	background-color: #d1b185;
+	color: #063779;
+}
+
+.ui-button { 
+	display: inline-block; 
+	position: relative; 
+	padding: 1px; 
+	color: #111;
+	margin-right: .1em; 
+	text-decoration: none !important; 
+	cursor: pointer; 
+	text-align: center; 
+	zoom: 1; 
+	overflow: visible; 
+}
+
+form, input, select, option, textarea, .ui-button {
+	font: 95% "Trebuchet MS", sans-serif; 
+}
+
+a {
+	color: #a21408;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #063779;
+	text-decoration: none;
+	border-bottom: 1px dotted #063779;
+}
+
+.desc {
+	font-size:150%;
+	font-weight:bold;
+}
+
+#main {
+	border:1px solid #ccc;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	background-color: #7a4906;
+	color: #fff;
+}
+
+.slider { 
+	width: 200px; 
+	margin-bottom: 10px;  
+}
+
+#sliderR .ui-slider-range { 
+	background: #ef2929; 
+}
+
+#sliderR .ui-slider-handle { 
+	background: #ee1d24;
+}
+
+#sliderG .ui-slider-range { 
+	background: #588528; 
+}
+
+#sliderG .ui-slider-handle { 
+	background: #3e6617; 
+}
+
+#sliderB .ui-slider-range { 
+	background: #0054a5; 
+}
+
+#sliderB .ui-slider-handle { 
+	background: #2f3192; 
+}
+
+
+#baseColor {
+	display:table;
+	width:100px;
+	height:100px;
+	margin:10px;
+	border:1px solid #ccc; 
+}
+
+#baseColorName, #baseColorNameHover {  
+	text-align:left;
+	vertical-align:middle;
+	padding:10px;
+}
+
+#slide-panel {  
+	text-align:center;
+	margin:10px;
+	margin-bottom:0;
+}
+
+#color-generator input#submit {
+	background-color: #063779;
+	color: #97a208;
+	font-weight:bold;
+	border:1px solid #ccc;
+}
+
+#color-generator option {
+	background-color: #97a208;
+	color: #063779;
+	font-weight:bold;
+	border:1px solid #ccc;
+}
+
+#footer {
+	text-align: center;
+	margin-top:10px;
+	padding:10px;
+	background-color: #a21408;
+	color: #fff;
+	border:1px solid #ccc;
+	font-weight:bold;
+}
+
+#footer a {
+	color: #d1b185;
+}
+
+#footer a:hover {
+	color: #fff;
+	border-bottom: 1px dotted #fff;
+}
+
+.result-colors {
+	border: 1px solid #000;
+	background-color: #fff;
+	color: #000;
+}
+
+.result-colors th, .result-colors td {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.result-colors td.cr {
+	border: 1px solid #000;
+	height: 75px;
+	width:75px;
+}
+
+#cpalette {
+	display: table;
+	border: 1px solid #ccc;
+	padding:8px;
+	text-align:center;
+	background-color: #d1b185;
+	margin: 10px;
+	margin-top: 0px;
+}
+
+#ctable {
+	border: 1px solid #000;
+	background-color: #000;
+}
+
+#ctable td {
+	width: 10px;
+	height:10px;
+}
